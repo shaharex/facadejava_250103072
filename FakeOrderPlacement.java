@@ -7,10 +7,10 @@ public class FakeOrderPlacement {
         String address = "123 Main St";
         double price = 1200.00;
 
-        boolean success = checkout.placeOrder(item, customer, address, price);
+        boolean islegit = checkout.placeOrder(item, customer, address, price);
 
         // Step 4: Handle high-level outcome
-        if (success) {
+        if (islegit) {
             System.out.println("Client received: Order completed successfully!");
             return true;
         } else {
